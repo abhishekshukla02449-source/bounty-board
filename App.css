@@ -1,0 +1,91 @@
+/* Task cards */
+.task-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 12px 0;
+  padding: 12px;
+  transition: transform 0.2s ease;
+}
+
+.task-card:hover {
+  transform: scale(1.02);
+}
+
+/* Status badges */
+.badge-pending {
+  background-color: #ffc107; /* yellow */
+  color: #333;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 0.9em;
+  margin-left: 8px;
+}
+
+.badge-completed {
+  background-color: #28a745; /* green */
+  color: white;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 0.9em;
+  margin-left: 8px;
+}
+
+/* Buttons */
+button {
+  margin-left: 10px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.mark-completed {
+  background-color: #28a745;
+  color: white;
+}
+
+button.mark-completed:hover {
+  background-color: #218838;
+}
+
+button.delete-task {
+  background-color: #dc3545;
+  color: white;
+}
+
+button.delete-task:hover {
+  background-color: #c82333;
+}
+
+/* Background */
+body {
+  background: linear-gradient(to right, #f0f4ff, #e6f7ff);
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+body {
+  background: linear-gradient(-45deg, #e0f7fa, #e6f7ff, #f0f4ff, #ffffff);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  min-height: 100vh;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.section {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.section h2 {
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #333;
+}
